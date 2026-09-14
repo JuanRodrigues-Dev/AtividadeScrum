@@ -1,0 +1,30 @@
+/* ---- Habilidades: categorias ---- */
+.skill-category{margin-bottom:34px;}
+.skill-category:last-child{margin-bottom:0;}
+.skill-category h3{
+  font-size:14px;
+  font-family:'JetBrains Mono', monospace;
+  color:var(--graphite);
+  margin-bottom:12px;
+  font-weight:500;
+}
+
+/* ---- Habilidades: grid de itens ---- */
+.stack-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
+  gap:10px;
+}
+.stack-item{
+  border:1px solid var(--line);
+  background:var(--paper-card);
+  padding:12px 14px;
+  border-radius:2px;
+  font-size:13.5px;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.stack-item .lvl{
+  font-family:'JetBrains Mono', monospace;
+  font-size:11px;
+  color:var(--blueprint);
+}
