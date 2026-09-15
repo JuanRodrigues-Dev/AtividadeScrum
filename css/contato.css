@@ -1,0 +1,59 @@
+/* ---- Contato: formulário ---- */
+form{max-width:480px;}
+.field{margin-bottom:16px;}
+label{
+  display:block; font-size:13px; margin-bottom:6px;
+  color:var(--graphite); font-family:'JetBrains Mono', monospace;
+}
+input, textarea{
+  width:100%;
+  font-family:'IBM Plex Sans', sans-serif;
+  font-size:14.5px;
+  padding:11px 12px;
+  border:1px solid var(--line);
+  border-radius:2px;
+  background:var(--paper-card);
+  color:var(--ink);
+}
+input:focus, textarea:focus{
+  outline:2px solid var(--blueprint);
+  outline-offset:1px;
+}
+textarea{resize:vertical; min-height:110px;}
+button{
+  font-family:'Space Grotesk', sans-serif;
+  font-weight:600;
+  font-size:14.5px;
+  padding:12px 22px;
+  background:var(--ink);
+  color:var(--paper);
+  border:none;
+  border-radius:2px;
+  cursor:pointer;
+  transition:background .15s;
+}
+button:hover{background:var(--blueprint);}
+#form-msg{
+  margin-top:14px; font-size:13.5px; display:none;
+  color:var(--blueprint);
+}
+
+/* ---- Contato: redes sociais ---- */
+.socials{display:flex; gap:16px; margin-top:26px;}
+.socials a{
+  display:flex; align-items:center; gap:7px;
+  font-size:13.5px; color:var(--graphite); text-decoration:none;
+  border:1px solid var(--line); padding:8px 12px; border-radius:2px;
+  transition:border-color .15s, color .15s;
+}
+.socials a:hover{border-color:var(--blueprint); color:var(--blueprint);}
+.socials svg{width:15px; height:15px;}
+
+/* ---- Contato: FAQ ---- */
+.faq{margin-top:44px;}
+.faq-item{
+  border-bottom:1px solid var(--line);
+  padding:16px 0;
+}
+.faq-item h3{font-size:15px; margin-bottom:6px;}
+.faq-item p{font-size:14px; color:var(--graphite); margin:0; max-width:58ch;}

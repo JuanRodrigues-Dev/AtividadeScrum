@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Programador Master</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand mono">PROG.MASTER</div>
+    <div class="navlinks">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html" class="active">Contato</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-title">
+  <div class="wrap">
+    <span class="role-tag">disponível para novos projetos</span>
+  </div>
+</div>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num mono">04</span>
+      <h2>Contato</h2>
+      <div class="rule"></div>
+    </div>
+    <p style="color:var(--graphite); font-size:15px; max-width:56ch; margin-bottom:26px;">Está com um projeto em mente ou quer conversar sobre uma oportunidade? Preencha o formulário abaixo ou me chame direto por e-mail.</p>
+
+    <form id="contact-form">
+      <div class="field">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Enviar mensagem</button>
+      <div id="form-msg"></div>
+    </form>
+
+    <div class="socials">
+      <a href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+        GitHub
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56z"/></svg>
+        LinkedIn
+      </a>
+      <a href="mailto:programador.master@exemplo.dev">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5zm2.2.2 7.8 6.5 7.8-6.5H4.2zM20 7.3l-8 6.66L4 7.3V18.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5z"/></svg>
+        E-mail
+      </a>
+    </div>
+
+    <div class="faq">
+      <div class="section-head">
+        <span class="section-num mono">·</span>
+        <h2>Perguntas frequentes</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="faq-item">
+        <h3>Quanto tempo leva pra receber uma resposta?</h3>
+        <p>Até 2 dias úteis após o envio do formulário ou e-mail.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Quais tipos de projeto você aceita?</h3>
+        <p>Sistemas web full-stack, principalmente com React no front-end e Node.js/PostgreSQL no back-end.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Você trabalha remoto?</h3>
+        <p>Sim, atendo remotamente e também presencialmente na região de Cajazeiras, PB.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Programador Master — Incremento de exemplo, atividade de Scrum (IFPB).</div>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
