@@ -1,0 +1,101 @@
+:root{
+  --ink:#14202B;
+  --paper:#EDF2F4;
+  --blueprint:#2C5F7C;
+  --pin:#C1440E;
+  --graphite:#4B5A63;
+  --line:#B8C4C9;
+  --paper-card:#F7FAFB;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'IBM Plex Sans', sans-serif;
+  line-height:1.55;
+}
+h1,h2,h3{
+  font-family:'Space Grotesk', sans-serif;
+  margin:0;
+  color:var(--ink);
+}
+.mono{
+  font-family:'JetBrains Mono', monospace;
+}
+a{color:inherit;}
+.wrap{
+  max-width:760px;
+  margin:0 auto;
+  padding:0 28px;
+}
+
+/* ---- Nav ---- */
+nav{
+  position:sticky; top:0; z-index:10;
+  background:rgba(237,242,244,0.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{
+  display:flex; justify-content:space-between; align-items:center;
+  padding-top:16px; padding-bottom:16px;
+}
+.brand{font-weight:600; font-size:15px; letter-spacing:0.02em;}
+.navlinks{display:flex; gap:22px; font-size:14px;}
+.navlinks a{text-decoration:none; color:var(--graphite); transition:color .15s;}
+.navlinks a:hover{color:var(--blueprint);}
+.navlinks a.active{color:var(--blueprint); font-weight:500;}
+
+/* ---- Page title (páginas internas) ---- */
+.page-title{
+  padding:46px 0 8px;
+  border-bottom:1px solid var(--line);
+}
+.page-title .role-tag{margin-bottom:14px;}
+.role-tag{
+  display:inline-block;
+  font-family:'JetBrains Mono', monospace;
+  font-size:12.5px;
+  color:var(--blueprint);
+  border:1px solid var(--blueprint);
+  padding:3px 9px;
+  border-radius:2px;
+  margin-bottom:18px;
+}
+
+/* ---- Section shell (usado em todas as páginas) ---- */
+section{padding:58px 0;}
+.section-head{
+  display:flex; align-items:baseline; gap:12px;
+  margin-bottom:30px;
+}
+.section-num{
+  font-family:'JetBrains Mono', monospace;
+  font-size:13px;
+  color:var(--pin);
+}
+.section-head h2{font-size:24px;}
+.rule{
+  height:1px;
+  background:var(--line);
+  flex:1;
+}
+
+/* ---- Footer ---- */
+footer{
+  border-top:1px solid var(--line);
+  padding:26px 0;
+  font-size:12.5px;
+  color:var(--graphite);
+  font-family:'JetBrains Mono', monospace;
+}
+
+@media (max-width:560px){
+  .navlinks{display:none;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+}
