@@ -1,0 +1,51 @@
+/* ---- Projetos: card ---- */
+.project{
+  border:1px solid var(--line);
+  background:var(--paper-card);
+  border-radius:3px;
+  padding:22px 24px;
+  margin-bottom:18px;
+  position:relative;
+}
+.project::before{
+  content:"";
+  position:absolute; left:-1px; top:14px; bottom:14px; width:3px;
+  background:var(--blueprint);
+  border-radius:2px;
+}
+.project h3{font-size:18px; margin-bottom:6px;}
+.project p.desc{color:var(--graphite); font-size:14.5px; max-width:60ch;}
+
+/* ---- Projetos: tags ---- */
+.tags{display:flex; flex-wrap:wrap; gap:7px; margin-top:14px;}
+.tag{
+  font-family:'JetBrains Mono', monospace;
+  font-size:11.5px;
+  color:var(--blueprint);
+  border:1px solid var(--blueprint);
+  padding:2px 7px;
+  border-radius:2px;
+}
+
+/* ---- Projetos: meta (papel/resultado) ---- */
+.project-meta{
+  display:flex; gap:24px; flex-wrap:wrap;
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+}
+.project-meta div{font-size:13px;}
+.project-meta .meta-label{
+  font-family:'JetBrains Mono', monospace;
+  color:var(--graphite);
+  font-size:11.5px;
+  display:block;
+  margin-bottom:2px;
+}
+
+.project-link{
+  display:inline-block; margin-top:14px;
+  font-size:13.5px; font-weight:500;
+  color:var(--pin); text-decoration:none;
+  border-bottom:1px solid var(--pin);
+}
